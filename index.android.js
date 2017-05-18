@@ -15,12 +15,12 @@ import {
 export default class IntervalTimer extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native! <3
+      <View style={styles.centerContainer}>
+        <Text style={styles.headerGreen}>
+          Welcome to IntervalTimer!
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit index.android.js
+          To get started, add an interval below
         </Text>
         <Text style={styles.instructions}>
           Double tap R on your keyboard to reload,{'\n'}
@@ -32,7 +32,7 @@ export default class IntervalTimer extends Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
+  centerContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
@@ -47,6 +47,17 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
+  },
+  headerBlue: {
+  	fontSize: 25,
+	//color: '#0D3695',
+	color: '#133887',
+	textAlign: 'center',
+  },
+  headerGreen: {
+  	fontSize: 25,
+  	textAlign: 'center',
+  	color: '#00982E',
   },
 });
 
